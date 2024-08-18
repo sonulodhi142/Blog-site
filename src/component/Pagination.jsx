@@ -1,9 +1,9 @@
-import React, { createContext } from 'react';
+import React, {  useContext } from 'react';
 import { AppContext } from '../context/Appcontext';
 
 const Pagination = () => {
 
-  const {page, handlePage,totalPages} = createContext(AppContext)
+  const {page, handlePage,totalPages} = useContext(AppContext)
   return (
     <div>
       <div>
@@ -14,9 +14,10 @@ const Pagination = () => {
         }
         {
           page<totalPages && (
-            <button onClick={() => handlePage(page +1)}>previous</button>
+            <button onClick={() => handlePage(page +1)}>Next</button>
           )
         }
+        <p>page {page} of {totalPages}</p>
       </div>
     </div>
   );

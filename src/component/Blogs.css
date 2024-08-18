@@ -1,0 +1,76 @@
+/* Container for blog posts */
+.blog {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+   
+  }
+  
+  .blog:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Title of the blog post */
+  .blog-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  /* Author and category of the blog post */
+  .blog-author {
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 5px;
+  }
+  
+  .blog-author span {
+    font-weight: bold;
+    color: #555555;
+  }
+  
+  /* Date of the blog post */
+  .blog-date {
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 15px;
+  }
+  
+  /* Content of the blog post */
+  .blog-contant {
+    font-size: 16px;
+    color: #444444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Tags of the blog post */
+  .blog-tag {
+    margin-top: 15px;
+  }
+  
+  .blog-tag span {
+    background-color: #f0f0f0;
+    color: #555555;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-right: 8px;
+    font-size: 14px;
+  }
+  
+  .blog-tag span:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* No posts found message */
+  .no-post {
+    text-align: center;
+    color: #999999;
+    font-size: 18px;
+  }
+  

@@ -15,10 +15,12 @@ function App() {
     fatchBlogPosts();
   },[])
   return (
-    <div>
-      <h1>My name is sonu lodhi</h1>
+    <div className='app'>
+      
       <Header/>
+      <div className='blogss'>
       <Blogs/>
+      </div>
       <Pagination/>
     </div>
   );
