@@ -11,10 +11,16 @@ function AppContextProvider({children}){
     const  [totalPages, setTotalPages] = useState(null);
 
     // data filling pending
-    async function fatchBlogPosts(page = 1){
+    async function fatchBlogPosts(page = 1 , tag = null, category){
 
         setLoading(true);
-        let Url = `${baseUrl}?page=${page}`
+        let Url = `${baseUrl}?page=${page}`;
+        if(tag){
+            Url+= `&tag=${tag}`;
+        }
+        if(category){
+            Url += `&category=${category}`;
+        }
         try{
             const result = await fetch(Url);
             const data = await result.json();

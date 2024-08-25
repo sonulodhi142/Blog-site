@@ -18,12 +18,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import AppContextProvider from './context/Appcontext';
+import AppContextProvider from './context/Appcontext'
+import { BrowserRouter as  BrowserRouter } from "react-router-dom";
+
 
 
 ReactDOM.render(
-  <AppContextProvider>
-    <App />
-  </AppContextProvider>,
+   <BrowserRouter>
+    <AppContextProvider>
+      <App />
+    </AppContextProvider>
+  </BrowserRouter>
+  ,
   document.getElementById('root')
 );

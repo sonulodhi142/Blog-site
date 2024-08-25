@@ -47,11 +47,13 @@
     color: #444444;
     line-height: 1.6;
     margin-bottom: 15px;
+    color: red;
   }
   
   /* Tags of the blog post */
   .blog-tag {
     margin-top: 15px;
+    color: blue;
   }
   
   .blog-tag span {
